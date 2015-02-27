@@ -14,7 +14,6 @@ public class Calculator {
         Stack<Double> stack = new Stack<Double>();
         Define def = new Define();
         Map<String, Cmd> cmds = new HashMap();
-
         cmds.put("PRINT", new Print());
         cmds.put("ADD", new Add());
         cmds.put("SUB", new Sub());
@@ -24,7 +23,6 @@ public class Calculator {
         cmds.put("SQRT", new Sqrt());
         cmds.put("PUSH", new Push());
         cmds.put("DEFINE", new Define());
-
         while (true) {
             String line = s.nextLine();
             String[] parts = line.split(" ");
