@@ -7,7 +7,6 @@ import java.util.Stack;
  * Created by Kubish on 26.02.2015.
  */
 public class Calculator {
-
     public static void main(String[] argc) {
         System.out.println("Calculator:");
         Scanner s = new Scanner(System.in);
