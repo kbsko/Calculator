@@ -5,7 +5,7 @@ import java.util.Stack;
  */
 public class Mul implements Cmd {
     @Override
-    public void exec(Stack<Double> stack, String[] parts) {
+    public void exec(Stack<Double> stack, String[] parts, Define def) {
         stack.push((stack.pop()) * stack.pop());
     }
 }

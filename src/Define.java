@@ -1,26 +1,16 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 /**
  * Created by Kubish on 26.02.2015.
  */
 public class Define implements Cmd {
-    private String defstr = "a";
-    private double defzn = 0;
 
-    public String getdefstr() {
-        return defstr;
-    }
-
-    public double getdefzn() {
-        return defzn;
-    }
+    public Map<String, String> defi = new HashMap();
 
     @Override
-    public void exec(Stack<Double> stack, String[] parts) {
-
-        defstr = parts[1];
-        defzn = Double.parseDouble(parts[2]);
-
-
+    public void exec(Stack<Double> stack, String[] parts, Define def) {
+        def.defi.put(parts[1], parts[2]);
     }
 }

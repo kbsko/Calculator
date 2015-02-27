@@ -5,7 +5,7 @@ import java.util.Stack;
  */
 public class Sqrt implements Cmd {
     @Override
-    public void exec(Stack<Double> stack, String[] parts) {
+    public void exec(Stack<Double> stack, String[] parts, Define def) {
         stack.push(Math.sqrt(stack.pop()));
     }
 }

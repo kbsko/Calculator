@@ -5,7 +5,7 @@ import java.util.Stack;
  */
 public class Sub implements Cmd {
     @Override
-    public void exec(Stack<Double> stack, String[] parts) {
+    public void exec(Stack<Double> stack, String[] parts, Define def) {
         double a;
         double b;
         b = stack.pop();

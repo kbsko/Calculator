@@ -5,7 +5,7 @@ import java.util.Stack;
  */
 public class Quit implements Cmd {
     @Override
-    public void exec(Stack<Double> stack, String[] parts) {
+    public void exec(Stack<Double> stack, String[] parts, Define def) {
         System.out.println("Program succesfull exit");
         System.exit(0);
     }
